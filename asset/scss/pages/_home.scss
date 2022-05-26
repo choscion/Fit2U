@@ -16,6 +16,8 @@ main{
         position: relative;
         left: 0;top: 0;
         width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
         .bg-image{
             position: relative;
             width: 100%;
@@ -132,7 +134,7 @@ main{
             height: 75px;
             line-height: 75px;
             font-size: 50px;padding-left: 65px;
-            background: url(/asset/images/logo/sc-goods-barma.png) 0 10px no-repeat;
+            background: url(../images/logo/sc-goods-barma.png) 0 10px no-repeat;
             background-size: 50px 50px;
         }
     }
@@ -461,7 +463,7 @@ main{
             transform: $tl-center;
             display: inline-block;
             width: 24px;height: 24px;
-            background: url(/asset/images/btn/right-arrow.png) center no-repeat;
+            background: url(../images/btn/right-arrow.png) center no-repeat;
             background-size: cover;
             opacity: 1;
             transition: .5s;
@@ -473,7 +475,7 @@ main{
             transform: $tl-center;
             display: inline-block;
             width: 24px;height: 24px;
-            background: url(/asset/images/btn/right-arrow.png) center no-repeat;
+            background: url(../images/btn/right-arrow.png) center no-repeat;
             background-size: cover;
             transition: .5s;
         }
@@ -489,7 +491,7 @@ main{
     }
     .bg-img{
         position: absolute;
-        left: 30%;bottom: -15%;
+        left: 12vw;bottom: -2vw;
         width: 40%;height: auto;
         background: #F6F6F6;
         overflow: hidden;

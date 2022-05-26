@@ -96,16 +96,11 @@ footer{
         transform-origin: 50% 50%;
         &::before{
             content: '';
-            // position: absolute;
-            // left: 50%;top: 50%;
-            // transform: $tl-center;
-            // transform-origin: 50% 0;
             transform: rotate(90deg);
             display: block;
             width: 24px;height: 24px;
             margin: 4px auto 0;
-            background: url(/asset/images/btn/right-arrow.png) center no-repeat;
-            background-size: cover;
+            background: url(../images/btn/right-arrow.png) center/cover no-repeat;
             opacity: 1;
             transition: .5s;
         }
