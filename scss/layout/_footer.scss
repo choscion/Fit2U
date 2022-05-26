@@ -1,0 +1,115 @@
+footer{
+    position: relative;
+    background-color: #212121;
+    padding: 283px 20% 108px;
+    display: block;
+    width: 60%;
+    color: #FFF;
+    fill: #FFF;
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-area{
+    width: 100%;
+    max-width: 100%;
+    .gnb-list{
+        display: flex;flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+        &.bottom{margin-top: 100px;}
+        .gnb-item{
+            font-size: 3vw;
+            width: auto;
+            opacity: 0;
+            &:nth-child(n+5){margin-top: 100px;}
+            .underline{
+                padding: 0 0.5vw;
+                &::before{
+                    height: 2px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+.bottom-area{
+    margin-top: 114px;
+    display: flex;
+    position: relative;
+    .ft-logo{
+        font-family: $font-Ya;
+        margin-right: 55px;
+        color: #fff;
+        font-size: 33px;
+        opacity: 0;
+        .small{
+            margin-right: 12px;
+            font-size: 22px;
+        }
+    }
+    .ft-sns-area{
+        width: 40px;
+        margin-top: 10px;
+        a{
+            display: inline-block;
+            font-size: 15px;
+            letter-spacing: .1em;
+            line-height: 1.5;
+            opacity: 0;
+            &+a{margin-top: 10px;}
+            &.underline{
+                &::before{
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .ft-copy{
+        position: absolute;
+        right: 0;bottom: -10px;
+        margin-right: 100px;
+        letter-spacing: 1px;
+        .small{
+            margin-right: 3px;
+            font-size: 11px;
+        }
+    }
+}
+
+.fix-top{
+    position: fixed;
+    z-index: 3;
+    right: 6%;bottom: 70px;
+    width: 72px;height: 72px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    overflow: hidden;
+    .btn{
+        position: absolute;
+        top: 50%;left: 50%;
+        transform: $tl-center;
+        display: block;
+        width: 30px;height: 30px;
+        margin-top: 2px;
+        transform-origin: 50% 50%;
+        &::before{
+            content: '';
+            transform: rotate(90deg);
+            display: block;
+            width: 24px;height: 24px;
+            margin: 4px auto 0;
+            background: url(../images/btn/right-arrow.png) center/cover no-repeat;
+            opacity: 1;
+            transition: .5s;
+        }
+    }
+    &.up{
+        .btn{
+            &::before{
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
