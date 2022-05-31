@@ -14,8 +14,8 @@ $(function(){
       y:(e.clientY - $(window).innerHeight()/2)/50
     })
     gsap.to('.bg-area .bg',{
-      x:-(e.clientX - $(window).innerWidth()/2)/50,
-      y:-(e.clientY - $(window).innerHeight()/2)/50,
+      x:-(e.clientX - $(window).innerWidth()/2)/35,
+      y:-(e.clientY - $(window).innerHeight()/2)/35,
       onComplete:function(){
         gsap.to('.bg-area .bg',{
           x:0,y:0
@@ -188,17 +188,24 @@ $(function(){
     })
     scrollMoFtBt.to('.bottom-area .ft-logo, .ft-sns-area a',.5,{opacity:1,stagger:.1})
 
-    $('.link-more').mouseover(function(){
-      $('.link-more').addClass('move');
+    $('.more01').mouseover(function(){
+      $('.more01').addClass('move');
     })
-    $('.link-more').mouseleave(function(){
-      $('.link-more').removeClass('move');
+    $('.more01').mouseleave(function(){
+      $('.more01').removeClass('move');
+    })
+
+    $('.more02').mouseover(function(){
+      $('.more02').addClass('move');
+    })
+    $('.more02').mouseleave(function(){
+      $('.more02').removeClass('move');
     })
 
 
 
 
    
-    
+    ScrollTrigger.refresh();
 
 })
